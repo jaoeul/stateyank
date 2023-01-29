@@ -1,0 +1,8 @@
+config BR2_PACKAGE_STATEYANK
+    bool "stateyank"
+    depends on BR2_LINUX_KERNEL
+    help
+      Enable linux live snapshot system
+
+comment "stateyank needs a Linux kernel to be built"
+    depends on !BR2_LINUX_KERNEL
